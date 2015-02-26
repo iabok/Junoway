@@ -63,3 +63,7 @@ Authors Of The Junoway Project
 * Noah Kange - @ noahkange28@gmail.com
 * Arthur Wandeka - @ wartyw@gmail.com
 
+Copyright
+-----------------------------------------------------------
+Copyright [2015] [Junoway]
+
