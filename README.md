@@ -38,7 +38,7 @@ $ bower install [name..] --save
 
 ## Building your code
 
-All of the JavaScript is pre-build using [grunt](http://gruntjs.com/) and the r.js optimiser, this means your development environment better simulates what will be served in production. Your built CSS and JS are then version and your index.html file is automatically updated with the versioned filename.
+All of the JavaScript is pre-build using [grunt](http://gruntjs.com/) and the r.js optimiser, this means your development environment better simulates what will be served in production. The built CSS and JS are then version and  index.html file will automatically be updated with the versioned filename.
 
 ```sh
 # Watch src/ and test/ files and test, then build on change
