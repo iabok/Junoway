@@ -50,7 +50,7 @@ $ grunt build
 # Compile the handlebars templates
 $ grunt handlebars
 
-# Compile less and css styles
+# Compile sass and css styles
 $ grunt styles
 ```
 
