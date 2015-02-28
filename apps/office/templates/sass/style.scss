@@ -1,0 +1,38 @@
+/*
+ Sytlesheet Name: Office
+ By Abok Isaac
+ @version: 1.0.0
+ @contact: abokisaac@gmail.com
+ Follow me on Twitter: @iabok
+*/
+
+/* ************************** */
+
+//Global CSS classes used for all template.
+//@import "menu_sideslide";
+
+
+//compass library
+@import "office_mixins/juno_mixins";
+
+//compass inbuilt blueprint library
+//@import "blueprint";
+
+//Bootstrapp sass files
+@import "bootstrap";
+
+//animate sass files
+@import "animate/fading_entrances/fadeIn";
+
+//compass library
+@import "office_base";
+
+//Junoway Header section style
+@import "Homepage/office_header";
+
+//Junoway content section style
+@import "Homepage/office_content";
+
+ 
+//Junoway footer section style
+@import "Homepage/office_footer";
