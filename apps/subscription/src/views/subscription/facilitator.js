@@ -73,8 +73,6 @@ window.utils = {
 	            this.signUp();
 	        }
 	    },
-
-	    
 	    // Use stickit to perform binding between
 	    // the model and the view
 	    bindings: {
