@@ -1,0 +1,67 @@
+/* Homepage Header stylesheet */
+
+//@import "compass/typography/lists/horizontal-list";
+//@import "compass/utilities/general/clearfix";
+
+.navbar-inverse{
+	//@extend .navbar-inverse;
+	background:lighten(#000000, 10%);
+	height:60px;
+	border:none;
+}
+
+.navbar-brand{
+	background-image: url('../images/junoway_logo.png');
+	width:150px;
+	height:48px;
+	display:block;
+	background-repeat:no-repeat;
+	visibility:visible;
+	position:relative;
+	clip:auto;
+	top:10px;
+	left:50px;
+}
+.navbar-right{
+	position:relative;
+	right:80px;
+}
+.office-nav{
+	@extend .nav;
+	position:relative;
+	left:-250px;
+	> li > a {
+			background-color:none;
+			padding:20px 2px;
+		}
+	} 
+#office-form-search{
+	width:100%;
+	margin-left:150px;
+	position:relative;
+	top:5px;
+}
+
+.office-dropdown{
+	@extend .dropdown;
+	//margin-left:-50px;
+}
+.office-dropdown-menu{
+	@extend .dropdown-menu;	 
+}
+.office-badge{
+	@extend .badge;
+	background-color: #ed0303;
+}
+.badge-position{
+	position:relative;
+	top:-10px;
+	left:-10px;
+}
+.office-icon-header{
+	color: lighten(#232222, 10%);
+	text-shadow:0px 1px 1px rgba(0, 0, 0, 0.6);
+}
+.open{
+	 background-color:#fff;
+}

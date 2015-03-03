@@ -13,7 +13,7 @@
 
 
 //compass library
-@import "office_mixins/juno_mixins";
+@import "office_mixins/mixins";
 
 //compass inbuilt blueprint library
 //@import "blueprint";
@@ -28,11 +28,11 @@
 @import "office_base";
 
 //Junoway Header section style
-@import "Homepage/office_header";
+@import "homepage/office_header";
 
 //Junoway content section style
-@import "Homepage/office_content";
+//@import "Homepage/office_content";
 
  
 //Junoway footer section style
-@import "Homepage/office_footer";
+//@import "Homepage/office_footer";
