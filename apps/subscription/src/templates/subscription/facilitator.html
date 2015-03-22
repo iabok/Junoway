@@ -1,0 +1,584 @@
+ <div class="navbar navbar-sub navbar-static-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html"></a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="juno-tabs navbar-right">
+                <li><a class="btn btn-lg btn-hiring" id="btn-hiring" href="#" role="button">We Are Hiring</a></li>
+                <li><a class="btn btn-lg btn-login" id="btn-login" href="#" role="button">Login</a></li>
+              </ul>
+            </div>
+          </div>
+ </div>
+  <div class="sub-content-bg">
+  <div class="container">
+    <div class="sub-content">
+        <div class="sub-main-header col-md-12">
+          <div class="row">
+          <span class="sub-header-size">Welcome to Junoway Subscriptions</span>
+          </div>
+          <div class="row"> 
+          <span class="sub-small-text">Exclusive <span style="color:#6f9fb7;">Access</span> to Registered Healthcare <span style="color:#EEA236;">Practitioners and Facilitators.</span></p>
+          </div>
+        </div>
+  </div>
+  </div>
+</div>
+ <div style="z-index:9999;" id="error-warning" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="error-header modal-header">
+                <button type="button" class="sub-popup-close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="sub-warning-title fa-2x">Warning!</h4>
+            </div>
+            <div class="error-body modal-body">
+                    <div class="alert alert-success">
+                        <b>Success!</b> Wine saved successfully
+                    </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn sub-btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container sub-row-space">
+  <form name="facilitatorForm" method="POST" id="sub-facilitator">
+<div id="security-info">
+    <div class="sub-join">
+      <h1 class="sub-reponsive-text"> Facilitators: Security Informaiton</h1>
+    </div>
+    <span id="companyName"></span>
+    <div class="sub-facilitator-form-inline">
+      <div class="form-group">
+        <div class="">
+        <label for="companyName" class="sub-facilitator-label">Company Name</label>
+        <input type="text" name="companyName" class="form-control-1" id="companyName" placeholder="Write your Company Name">
+        </div>
+      </div>
+    </div>
+
+<div class="sub-row-space"></div>
+
+  <div class="sub-facilitator-form-inline">
+      <div class="form-group">
+        <label for="companyTin" class="sub-facilitator-label">Company TIN</label>
+        <input type="text" name="companyTin" class="form-control-1" id="companyTin" placeholder="TIN No.">
+
+        </div>
+
+      <div class="form-group">
+        <label for="RegNO" class="sub-facilitator-label">Reg. No.</label>
+        <input type="text" name="regNo" class="form-control-1" id="regNo" placeholder="Registartion Number">
+        </div>
+    </div>
+
+<div class="sub-row-space"></div>
+
+    <div class="sub-facilitator-form-inline">
+      <div class="form-group">
+        <label for="ownersTitle" class="sub-facilitator-label">Owners Title</label>
+        <input type="text" name="ownersTitle" class="form-control-1" id="ownersTitle" placeholder="Write the Owners Title">
+        </div>
+    </div>
+
+<div class="sub-row-space"></div>
+<div class="sub-facilitator-form-inline">
+      <div class="form-group">
+        <label class="sub-personal-label">Name of Employer</label>
+      </div>
+      <div class="form-group">
+        <label class="sr-only" for="firstName">First Name</label>
+        <input type="text" name="firstName" class="form-control-1" id="firstName" placeholder="First Name">
+   
+      </div>
+      <div class="form-group">
+        <label class="sr-only" for="lastName">Last Name</label>
+        <input type="text" name="lastName" class="form-control-1" id="lastName" placeholder="Last Name">
+    
+      </div>
+
+      <div class="form-group">
+        <label class="sr-only" for="middleName">Middle Name</label>
+        <input type="text" name="middleName" class="form-control-1" id="middleName" placeholder="Middle Name">
+
+      </div>
+</div>
+
+<div class="sub-row-space"></div>
+
+    <div class="sub-facilitator-form-inline">
+      <div class="form-group">
+        <label for="email" class="sub-facilitator-label">Email</label>
+        <input type="email" name="email" class="form-control-1" id="email" placeholder="Email Address">
+        <span class="help-block hidden"></span>
+        </div>
+    </div>
+
+<div class="sub-row-space"></div>
+
+    <div class="sub-facilitator-form-inline">
+      <div class="form-group">
+        <label for="password" class="sub-facilitator-label">Password</label>
+        <input type="password" name="password" class="form-control-1" id="password" placeholder="Password">
+        <span class="help-block hidden"></span>
+        </div>
+    </div>
+
+<div class="sub-row-space"></div>
+
+    <div class="sub-facilitator-form-inline">
+      <div class="form-group">
+        <label for="confirmPassword" class="sub-facilitator-label">Confirm Password</label>
+        <input type="password" name="confirmPassword" class="form-control-1" id="password1" placeholder="Confirm Password">
+        <span class="help-block hidden"></span>
+        </div>
+    </div>
+
+<div class="sub-row-space"></div>
+
+      <div class="form-group">
+        <label for="terms" class="col-sm-2 col-md-3 sub-facilitator-label">Accept EULA:</label>
+        <div class="col-sm-offset-2 col-sm-10">
+          <div class="checkbox">
+              <input type="checkbox" name="terms" value="true"> <a href="" class="sub-accept-terms" >Statement of Terms & Responsibilities</a>
+              <span class="help-block hidden"></span>
+          </div>
+        </div>
+      </div>
+
+<div class="sub-row-space"></div>
+        <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <a href="#subscription" class="btn sub-btn-cancel">Back</a>
+          <span id="personalNext" class="btn sub-btn-success personalNext">Next</span>
+        </div>
+      </div>  
+</div>
+<!-- Section One End - Section Two --------------------------------------------------------------------- -->
+<div id="personal-info">
+    <div class="sub-join">
+        <h1 class="sub-reponsive-text"> Facilitators: Company Administrators Informaiton</h1>
+    </div>
+      <div class="sub-facilitator-form-inline">
+      <div class="form-group">
+        <label class="sub-facilitator-label">Names</label>
+      </div>
+      <div class="form-group">
+        <label class="sr-only" for="admin_firstName">First Name</label>
+        <input type="text" name="admin_firstName" class="form-control-1" id="admin_firstName" placeholder="First Name">
+         
+      </div>
+      <div class="form-group">
+        <label class="sr-only" for="admin_lastName">Last Name</label>
+        <input type="text" name="admin_lastName" class="form-control-1" id="admin_lastName" placeholder="Last Name">
+      </div>
+
+      <div class="form-group">
+        <label class="sr-only" for="middleName">Middle Name</label>
+        <input type="text" name="admin_middleName" class="form-control-1" id="middleName" placeholder="Middle Name">
+      </div>
+    </div>
+<div class="sub-row-space"></div>
+
+    <div class="sub-facilitator-form-inline">
+      <!-- Names -->
+      <div class="form-group">
+        <label for="admin_age" class="sub-facilitator-label">Age</label>
+            <input type="number" class="form-control-1" id="admin_age" name="admin_age" placeholder="Your Age" />
+            <span class="help-block hidden"></span>
+      </div>
+      <div class="form-group">
+        <label  for="admin_sex" class="sub-facilitator-label">Sex</label>
+            <select class="form-control-1" name="admin_sex">
+            </select>
+      </div>
+
+      <div class="form-group">
+        <label for="admin_nationality" class="sub-facilitator-label">Nationality</label>
+            <select class="form-control-1" name="admin_nationality">
+            </select>
+      </div>
+    </div>
+
+<div class="sub-row-space"></div>
+
+<div class="sub-facilitator-form-inline">
+          <div class="form-group">
+        <label for="admin_experience" class="sub-facilitator-label">Professional Experience</label>
+            <select name="admin_experience" class="form-control-1" id="admin_experience">
+            </select>
+      </div>
+</div>
+
+<div class="sub-row-space"></div>
+
+    <h1 class="sub-reponsive-text"> Permanent Address </h1>
+    <div class="sub-row-space"></div>
+
+    <div class="sub-facilitator-form-inline">
+      <!-- Names -->
+      <div class="form-group">
+        <label for="admin_country" class="sub-facilitator-label">Country</label>
+            <select name="admin_Country" id="admin_Country" class="form-control-1" placeholder="Select a Country" >
+            </select>
+      </div>
+
+      <div class="form-group">
+        <label for="admin_zipCode" class="sub-facilitator-label">Zip Code</label>
+          <input type="number" name="admin_zipCode" class="form-control-1" id="admin_zipCode" placeholder="00001" >
+      </div>
+    </div>
+
+    <div class="sub-row-space"></div>
+
+    <div class="sub-facilitator-form-inline">
+      <!-- Names -->
+      <div class="form-group">
+        <label for="admin_state" class="sub-facilitator-label">State / District</label>
+          <select name="admin_state" id="admin_state" class="form-control-1" placeholder="Select a State">      
+            </select>
+      </div>
+
+      <div class="form-group">
+        <label for="admin_streetLine1" class="sub-facilitator-label">Street Line 1</label>
+          <input type="type" name="admin_streetLine1" class="form-control-1" id="admin_streetLine1" placeholder="eg. Livingstone Drive" >
+      </div>
+    </div>
+    <div class="sub-row-space"></div>
+
+
+    <div class="sub-facilitator-form-inline">
+      <!-- Names -->
+      <div class="form-group">
+        <label for="admin_city" class="sub-facilitator-label">City</label>
+            <select name="admin_city" id="admin_city" class="form-control-1" placeholder="Select a City">
+            </select>
+      </div>
+
+      <div class="form-group">
+        <label for="admin_streetLine2" class="sub-facilitator-label">Street Line 2</label>
+          <input type="text" name="admin_streetLine2" class="form-control-1" id="admin_streetLine2" placeholder="eg. MUK. No.3">
+      </div>
+    </div>
+    <div class="sub-row-space"></div>
+
+     <div class="sub-facilitator-form-inline">
+      <div class="form-group">
+        <label for="admin_areaCode" class="sub-facilitator-label">Area Code</label>
+          <input type="text" name="admin_areaCode" class="form-control-1" id="admin_areaCode" placeholder="256" >
+      </div>
+    </div>
+    <div class="sub-row-space"></div>
+
+
+     <div class="sub-facilitator-form-inline">
+      <div class="form-group">
+        <label for="admin_postalCode" class="sub-facilitator-label">Postal Code</label>
+          <input type="text" name="admin_postalCode" class="form-control-1" id="admin_postalCode" placeholder="256">
+      </div>
+    </div>
+    <div class="sub-row-space"></div>
+
+     <h1 class="sub-reponsive-text">Contact Address</h1>
+
+    <div class="sub-row-space"></div>
+
+     <div class="sub-facilitator-form-inline">
+      <div class="form-group">
+        <label for="admin_email" class="sub-personal-label">Email Address</label>
+          <input type="email" name="admin_email" class="form-control-1" id="admin_email" placeholder="Email Address">
+          <span class="help-block hidden"></span>
+      </div>
+    </div> 
+
+    <div class="sub-row-space"></div>
+
+     <div class="sub-facilitator-form-inline">
+        <div class="form-group">
+          <label for="admin_mobiCode1" class="sub-facilitator-label">Mobile Number</label>
+            <input type="text" name="admin_mobiCode1" class="form-control-1" id="admin_mobiCode1" max-length="4" placeholder="+256">
+        </div>
+
+        <div class="form-group">
+              <input type="text" name="admin_mobiCode2" class="form-control-1" id="admin_mobiCode2" max-length="3" placeholder="793">
+        </div>
+
+        <div class="form-group">
+              <input type="text" name="admin_mobiCode3" class="form-control-1" id="admin_mobiCode3" max-length="6" placeholder="7892055">
+        </div>
+    </div>
+
+    <div class="sub-row-space"></div>
+
+     <div class="sub-facilitator-form-inline">
+        <div class="form-group">
+          <label for="admin_homeCode1" class="sub-facilitator-label">Land Line Number</label>
+            <input type="text" name="admin_homeCode1" class="form-control-1" id="admin_homeCode1" max-length="4" placeholder="+256">
+        </div>
+
+        <div class="form-group">
+              <input type="text" name="admin_homeCode2" class="form-control-1" id="admin_homeCode2" max-length="3" placeholder="793">
+        </div>
+
+        <div class="form-group">
+              <input type="text" name="admin_homeCode3" class="form-control-1" id="admin_homCode3" max-length="6" placeholder="7892055">
+        </div>
+    </div>
+
+    <div class="sub-row-space"></div> 
+
+      <div class="sub-facilitator-form-inline">
+        <div class="form-group">
+          <label for="admin_faxCode1" class="sub-facilitator-label">Fax Number</label>
+            <input type="text" name="admin_faxCode1" class="form-control-1" id="admin_faxCode1" max-length="4" placeholder="+256">
+        </div>
+
+        <div class="form-group">
+              <input type="text" name="admin_faxCode2" class="form-control-1" id="admin_faxCode2" max-length="3" placeholder="793">
+        </div>
+
+        <div class="form-group">
+              <input type="text" name="admin_faxCode3" class="form-control-1" id="admin_faxCode3" max-length="6" placeholder="7892055">
+        </div>
+    </div>
+
+  <div class="sub-row-space"></div>
+
+    <div class="sub-facilitator-form-inline">
+      <div class="form-group">
+        <label for="admin_website" class="sub-facilitator-label">Website/LinkiedIn Profile</label>
+          <input type="text" name="admin_website" class="form-control-1" id="admin_website" placeholder="Website or LinkedIn url" >
+      </div>
+    </div>
+  <div class="sub-row-space"></div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <span class="btn sub-btn-cancel securityBack">Back</span>
+                <span  class="btn sub-btn-success proffessionalNext">Next</span>
+            </div>
+      </div>
+</div>
+<!-- Section Two End - Section Three --------------------------------------------------------------------- -->
+<div id="proffessional-info">
+    <div class="sub-join">
+        <h1 class="sub-reponsive-text"> Facilitator: Company Informaiton</h1>
+    </div>
+    <div class="sub-facilitator-form-inline">
+      <label for="companyTin" class="sub-facilitator-label">Confrim Company TIN & Reg No</label>
+      <div class="form-group">
+        <input type="text" name="companyTin" class="form-control-1" id="companyTin" placeholder="TIN No.">
+        </div>
+      <div class="form-group">
+        <input type="text" name="regNo" class="form-control-1" id="regNo" placeholder="Registartion Number">
+        </div>
+    </div>
+
+<div class="sub-row-space"></div>
+
+      <div class="sub-facilitator-form-inline">
+        <div class="form-group">
+          <label for="issuing" class="sub-facilitator-label">Issuing Authority</label>
+          <input type="text" name="issuing" class="form-control-1" id="issuing" placeholder="Write Issuing Authority">
+        </div>
+      </div>
+
+<div class="sub-row-space"></div>
+
+      <div class="sub-facilitator-form-inline">
+        <div class="form-group">
+          <label for="dateOfIssue" class="sub-facilitator-label">Date Of Issue</label>
+          <input type="text" name="dateOfIssue" class="form-control-1" id="dateOfIssue" placeholder="Choose from the Calender">
+        </div>
+      </div>
+
+<div class="sub-row-space"></div>
+
+      <div class="sub-facilitator-form-inline">
+        <div class="form-group">
+          <label for="dateOfExpiry" class="sub-facilitator-label">Date Of Expiry</label>
+          <input type="text" name="dateOfExpiry" class="form-control-1" id="dateOfExpiry" placeholder="Choose from the Calender">
+        </div>
+      </div>
+<div class="sub-row-space"></div>
+ 
+<div class="sub-facilitator-form-inline">
+      <div class="form-group">
+        <label  for="ageOfCompany" class="sub-facilitator-label">Age of Company</label>
+            <select name="ageOfCompany" class="form-control-1">
+            </select>
+      </div>
+</div>
+    <div class="sub-row-space"></div>
+    <h1 class="sub-reponsive-text">Company Address</h1>
+    <div class="sub-row-space"></div>
+
+    <div class="sub-facilitator-form-inline">
+      <!-- Names -->
+      <div class="form-group">
+        <label for="country" class="sub-facilitator-label">Country</label>
+            <select name="Country" id="Country" class="form-control-1" placeholder="Select a Country">
+            </select>
+      </div>
+
+      <div class="form-group">
+        <label for="zipCode" class="sub-facilitator-label">Zip Code</label>
+          <input type="type" name="zipCode" class="form-control-1" id="zipCode" placeholder="00001" >
+      </div>
+    </div>
+
+    <div class="sub-row-space"></div>
+
+    <div class="sub-facilitator-form-inline">
+      <!-- Names -->
+      <div class="form-group">
+        <label for="state" class="sub-facilitator-label">State / District</label>
+            <select name="state" id="state" class="form-control-1" placeholder="Select a State">
+            </select>
+      </div>
+
+      <div class="form-group">
+        <label for="streetLine1" class="sub-facilitator-label">Street Line 1</label>
+          <input type="type" name="streetLine1" class="form-control-1" id="streetLine1" placeholder="eg. Livingstone Drive" >
+      </div>
+    </div>
+    <div class="sub-row-space"></div>
+
+    <div class="sub-facilitator-form-inline">
+      <!-- Names -->
+      <div class="form-group">
+        <label for="city" class="sub-facilitator-label">City</label>
+            <select name="city" id="city" class="form-control-1" placeholder="Select a city">
+            </select>
+      </div>
+
+      <div class="form-group">
+        <label for="streetLine2" class="sub-facilitator-label">Street Line 2</label>
+          <input type="text" name="streetLine2" class="form-control-1" id="streetLine2" placeholder="eg. MUK. No.3" >
+      </div>
+    </div>
+    <div class="sub-row-space"></div>
+
+     <div class="sub-facilitator-form-inline">
+      <div class="form-group">
+        <label for="areaCode" class="sub-facilitator-label">Area Code</label>
+          <input type="text" name="areaCode" class="form-control-1" id="areaCode" placeholder="256" >
+      </div>
+    </div>
+    <div class="sub-row-space"></div>
+
+     <div class="sub-facilitator-form-inline">
+      <div class="form-group">
+        <label for="postalCode" class="sub-facilitator-label">Postal Code</label>
+          <input type="text" name="postalCode" class="form-control-1" id="postalCode" placeholder="256" >
+      </div>
+    </div>
+    <div class="sub-row-space"></div>
+
+    <h1 class="sub-reponsive-text">Company Contact</h1>
+
+    <div class="sub-row-space"></div>
+
+     <div class="sub-facilitator-form-inline">
+      <div class="form-group">
+        <label for="website" class="sub-facilitator-label">Website</label>
+          <input type="text" name="website" class="form-control-1" id="website" placeholder="Website" >
+      </div>
+    </div> 
+
+    <div class="sub-row-space"></div>
+
+     <div class="sub-facilitator-form-inline">
+        <div class="form-group">
+          <label for="code1" class="sub-facilitator-label" >Mobile Number</label>
+            <input type="text" name="mobiCode1" class="form-control-1" id="mobiCode1" max-length="4" placeholder="+256">
+        </div>
+
+        <div class="form-group">
+              <input type="text" name="mobiCode2" class="form-control-1" id="mobiCode2" max-length="3" placeholder="793">
+        </div>
+
+        <div class="form-group">
+              <input type="text" name="mobiCode3" class="form-control-1" id="mobiCode3" max-length="6" placeholder="7892055">
+        </div>
+    </div>
+
+    <div class="sub-row-space"></div>
+
+     <div class="sub-facilitator-form-inline">
+        <div class="form-group">
+          <label for="teleCode1" class="sub-facilitator-label">Telephone Line 1</label>
+            <input type="text" name="teleCode1" class="form-control-1" id="teleCode1" max-length="4" placeholder="+256">
+        </div>
+
+        <div class="form-group">
+              <input type="text" name="teleCode2" class="form-control-1" id="teleCode2" max-length="3" placeholder="793">
+        </div>
+
+        <div class="form-group">
+              <input type="text" name="teleCode3" class="form-control-1" id="teleCode3" max-length="6" placeholder="7892055">
+        </div>
+    </div>
+
+    <div class="sub-row-space"></div>
+
+     <div class="sub-facilitator-form-inline">
+        <div class="form-group">
+          <label for="tele1Code1" class="sub-facilitator-label">Telephone Line 2</label>
+            <input type="text" name="tele1Code1" class="form-control-1" id="tele1Code1" max-length="4" placeholder="+256">
+        </div>
+
+        <div class="form-group">
+              <input type="text" name="tele1Code2" class="form-control-1" id="tele1Code2" max-length="3" placeholder="793">
+        </div>
+
+        <div class="form-group">
+              <input type="text" name="tele1Code3" class="form-control-1" id="tele1Code3" max-length="6" placeholder="7892055">
+        </div>
+    </div>
+
+
+    <div class="sub-row-space"></div>
+
+      <div class="sub-personal-form-inline">
+        <div class="form-group">
+          <label for="code1" class="sub-personal-label">Fax Number</label>
+            <input type="text" name="faxCode1" class="form-control-1" id="faxCode1" max-length="4" placeholder="+256">
+        </div>
+
+        <div class="form-group">
+              <input type="text" name="faxCode2" class="form-control-1" id="faxCode2" max-length="3" placeholder="793">
+        </div>
+
+        <div class="form-group">
+              <input type="text" name="faxCode3" class="form-control-1" id="faxCode3" max-length="6" placeholder="7892055">
+        </div>
+    </div>
+
+    <div class="sub-row-space"></div> 
+
+
+  <div class="sub-personal-form-inline">
+      <div class="form-group">
+        <label for="tourist" class="sub-personal-label">Nearest Tourism attraction to Premises</label>
+          <input type="text" name="tourist" class="form-control-1" id="tourist" placeholder="Name the Tourist Attraction">
+      </div>
+    </div>
+  <div class="sub-row-space"></div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <span class="btn sub-btn-cancel personalBack">Back</span>
+              <span><input id="signUpButton" class="btn sub-btn-success" type="submit" value="Submit"></span>
+            </div>
+         </div>       
+    </div>  
+</div>
+</form>
