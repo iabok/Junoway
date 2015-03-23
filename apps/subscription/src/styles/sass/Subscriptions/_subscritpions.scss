@@ -1,0 +1,369 @@
+//************************
+//Subscription Sytlesheet
+//************************
+
+//subscription welcomepage stylesheet
+
+@import "compass/utilities/general/clearfix";
+
+.navbar-sub{
+	@extend .navbar-inverse;
+	background:lighten(#000000, 10%);
+	height:60px;
+	border:none;
+}
+
+#btn-hiring{
+	margin-top:10px;
+	text-shadow:0px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+#btn-login{
+	@extend #btn-hiring;
+}
+
+.sub-content-bg{
+	@extend .img-responsive;
+	width:100%;
+	background-image: url('../images/sub-bg-join.jpg');
+	height:auto;
+	@include margin_properties_all(top, -20px);
+	@include margin_properties_all(bottom, 20px);
+}
+
+.sub-content{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+.sub-main-header{
+	color:lighten(#ffffff, 0%);
+	font-size:120%;
+	font-weight:300;
+	clear:both;
+	z-index:9999;
+	text-shadow:0px 2px 2px rgba(0, 0, 0, 0.6);
+	margin: 1.98em 0px;
+}
+
+.sub-header-size{
+	font-size:60px;
+	font-weight:700;
+	height:81px;
+	font-family:"open sans";
+
+	@media screen and (max-width: 360px){
+		font-size:30px;
+	} 
+
+	@media screen and (min-width: 360px) and (max-width: 768px) {
+		font-size:40px;
+	} 
+
+	@media screen and (min-width: 761px) and (max-width:999px) {
+		 font-size:40px;
+	}
+
+}
+
+.sub-small-text{
+	font-family:"open sans";
+
+	@media screen and (max-width: 360px){
+
+		font-size:14px;
+
+	} 
+
+	@media screen and (min-width: 360px) and (max-width: 768px) {
+		font-size:16px;
+ 
+
+	} 
+
+	@media screen and (min-width: 761px) and (max-width:999px) {
+		 font-size:16px;
+	}
+
+}
+
+.sub-reponsive-text{
+	font-family:"open sans";
+	font-weight:600;
+
+	@media screen and (max-width: 360px){
+		font-size:25px;
+		font-weight:600;
+	} 
+
+	@media screen and (min-width: 360px) and (max-width: 768px) {
+		font-size:30px;
+		font-weight:600;
+	} 
+
+	@media screen and (min-width: 761px) and (max-width:999px) {
+		 font-size:30px;
+		 font-weight:600;
+	}
+
+}
+
+#sub-warning{
+	width:100%;
+}
+
+.modal-header{
+	background-color:#de2a2a;
+}
+
+.modal-validation-error-header{
+	@extend .modal-header;
+}
+
+.modal-validation-success-header{
+	@extend .modal-header;
+	background-color:#5cb85c;
+}
+.modal-success{
+	@extend .alert-success;
+	background:none;
+	border-radius:0px;
+	border:none;
+}
+
+.modal-danger{
+	@extend .alert-danger;
+	border-radius:0px;
+	background:none;
+	border:none;	
+}
+
+.sub-warning-title{
+	color:#ffffff;
+	text-shadow:0px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.sub-warning-content{
+	font-size:16px;
+	line-height:24px;
+}
+
+.sub-popup-close{
+	@extend .close;
+	color:#ffffff;
+}
+
+.modal-body{
+	background-color:lighten(#b9b026, 40%);
+	line-height:21px;
+}
+
+.modal-validation-success-body{
+	@extend .modal-body;
+	background-color:lighten(#5cb85c, 40%);
+	line-height:21px;
+}
+
+.modal-footer{
+	background-color:lighten(#41413f, 20%);
+	border:none;
+}
+
+.sub-btn-danger{
+	@extend .btn-danger;
+	background:none;
+	border-color:#ffffff;
+
+	&:hover{
+		background:darken(#41413f, 5%);
+		border-color:#ffffff;
+	}
+}
+
+.sub-dropdown-bg{
+	@extend .navbar-default;
+
+}
+
+.sub-row-space{
+	@include margin_properties_all(bottom, 50px);
+
+}
+
+.sub-join{
+	@include margin_properties_all(bottom, 30px);
+
+}
+
+.sub-panel-primary{
+	@extend .panel-primary;
+	border-color:lighten(#337AB7, 40%);
+}
+
+.sub-panel-success{
+	@extend .panel-success;
+}
+
+.sub-panel-warning{
+	@extend .panel-warning;
+}
+
+.sub-panel-danger{
+	@extend .panel-danger;
+ 
+}
+
+.sub-list-group{
+	@extend .list-group;
+	& a:hover{
+		text-decoration:none;
+		color:#ffffff;
+	}
+}
+
+.sub-list-group-item{
+	@extend .list-group-item;
+	border-radius:0px;
+
+	&:hover{
+		background-color:lighten(#6f9fb7, 20%);
+		color:#ffffff;
+		text-decoration:none;
+		border:1px solid lighten(#6f9fb7, 10%);
+		border-radius:0px;
+		text-shadow:0px 2px 2px rgba(0, 0, 0, 0.6);
+		-webkit-transition: all 0.3s ease 0s;
+	    -moz-transition: all 0.3s ease 0s;
+	    -o-transition: all 0.3s ease 0s;
+	    transition: all 0.3s ease 0s;
+	}
+
+}
+
+
+// Subscritpion security information stylesheets
+
+
+
+.sub-form-inline{
+	@extend .form-inline;
+	@include margin_properties_all(left, 17%);
+	@include margin_properties_all(bottom, 30px);
+}
+
+.sub-form-horizontal{
+	@extend .form-horizontal;
+	text-align:none;
+	@include margin_properties_all(left, 0px);
+
+	& .sub-control-label{
+		//@extend .control-label;
+		text-align:left;
+		font-weight:normal;
+	}
+
+	& placeholder{
+		color:#999999;
+		font-size:16px;
+	}
+
+}
+
+.sub-label-name{
+	position:relative;
+	top:30px;
+
+}
+
+
+.sub-form-group{
+	@extend .form-group;
+	@include margin_properties_all(top, 30px);
+
+}
+
+.sub-control-label{
+	@extend .control-label;
+	text-align:left;
+	font-weight:normal;
+}
+
+.form-control-1{
+	@extend .form-control;
+	border-radius:0px;
+	background-color: #fff;
+  	border: 1px solid #aaa;
+	height:40px;
+	box-shadow:none;
+	//@include margin_properties_all(left, 50px);
+	&:focus{
+		box-shadow:none;
+	}
+}
+
+.form-control-2{
+	@extend .form-control-1;
+	//@include margin_properties_all(left, -80px);
+}
+
+
+
+.sub-accept-terms{
+	position:relative;
+	top:-5px;
+}
+
+.sub-terms{
+	position:relative;
+	top:-30px;
+	left:50px;
+}
+
+.sub-btn-success{
+	@extend .btn-success;
+	font-size:20px;
+	border-radius:0px;
+	@include margin_properties_all(left, 30px);
+
+}
+.sub-btn-cancel{
+	@extend .btn-danger;
+	font-size:20px;
+	border-radius:0px;
+}
+
+// Personal information Stylesheets
+
+.sub-personal-form-inline{
+	@extend .form-inline;
+	margin:0px;
+}
+
+.sub-personal-label{
+	@extend .sub-control-label;
+	@include margin_properties_all(right, 10px);
+	@include margin_properties_all(left, 30px);
+}
+
+#sub-row-space{
+	@include margin_properties_all(left, 30px);
+
+}
+
+//Facilitator Stylesheets.
+
+.sub-facilitator-form-inline{
+	@extend .sub-personal-form-inline;
+}
+
+.sub-facilitator-label{
+	@extend .sub-personal-label;
+}
+
+.select2-container{
+	border-radius:0px;
+	height:30px;
+}
+
+ 
+

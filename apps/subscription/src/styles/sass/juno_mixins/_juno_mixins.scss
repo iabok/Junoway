@@ -1,0 +1,102 @@
+
+//fonts
+@mixin font_properties($weight, $font-size, $font-name) {
+	font: $weight $font-size/0.5 $font-name, Helvetica, sans-serif;
+	$font-variant: small-caps;
+ }
+
+//Default Border mixin
+ @mixin border_properties($pixels, $property, $color){
+ 	border: $pixels $property $color;
+ }
+
+//Types:
+//******************
+//top
+//bottom
+//null
+//********************
+//usage
+//**********
+//border_properties_all(top, 1px, solid, #ffffff);
+//*********************************
+ @mixin border_properties_all($type, $pixels, $property, $color ){
+	@if $type == bottom{
+		border-#{$type}: $pixels $property $color;
+	}
+
+	@else if $type == top{
+		border-#{$type}: $pixels $property $color;
+	}
+
+	@else if $type == left{
+		border-#{$type}: $pixels $property $color;
+	}
+
+	@else if $type == right{
+		border-#{$type}: $pixels $property $color;
+	}
+
+	@else {
+		border:$pixels $property $color;
+	}
+}
+
+
+
+ @mixin padding_properties_all($type, $pixels ){
+	@if $type == bottom{
+		padding-#{$type}: $pixels;
+	}
+
+	@else if $type == top{
+		padding-#{$type}: $pixels;
+	}
+
+	@else {
+		padding:$pixels;
+	}
+}
+
+//Rounded border(circles)
+ @mixin rounded_borders($rounding) {
+	-moz-border-radius: $rounding $rounding;
+	-webkit-border-radius: $rounding $rounding;
+	-khtml-border-radius: $rounding $rounding;
+	-o-border-radius: $rounding $rounding;
+		border-radius: $rounding $rounding;
+}
+
+//Types:
+//******************
+//top
+//bottom
+//right
+//left
+//null
+//********************
+//usage
+//**********
+//margin_properties_all(top, 1px, solid, #ffffff);
+//*********************************
+ @mixin margin_properties_all($type, $pixels){
+	@if $type == bottom{
+		margin-#{$type}: $pixels;
+	}
+
+	@else if $type == top{
+		margin-#{$type}: $pixels;
+	}
+
+	@else if $type == left{
+		margin-#{$type}: $pixels;
+	}
+
+	@else if $type == right{
+		margin-#{$type}: $pixels;
+	}
+
+	@else {
+		margin:$pixels;
+	}
+}
