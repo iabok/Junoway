@@ -59,7 +59,6 @@ Authors Of The Junoway Project
 ---------------------------------------------------------
 * Omega Emmy Jean - @ omegaemmy@gmail.com
 * Abok Isaac - @ abokisaac@gmail.com
-* Tugume Humphrey - @ humphie7@gmail.com
 * Noah Kange - @ noahkange28@gmail.com
 * Arthur Wandeka - @ wartyw@gmail.com
 
