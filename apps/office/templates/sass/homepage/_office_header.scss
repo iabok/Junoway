@@ -4,7 +4,7 @@
 //@import "compass/utilities/general/clearfix";
 
 .navbar-inverse{
-	//@extend .navbar-inverse;
+	@extend .navbar-inverse;
 	background:lighten(#000000, 10%);
 	height:60px;
 	border:none;
@@ -34,24 +34,58 @@
 			background-color:none;
 			padding:20px 2px;
 		}
+
+	@media screen and (max-width: 360px){
+
+		font-size:14px;
+
 	} 
+
+	@media screen and (min-width: 360px) and (max-width: 768px) {
+		font-size:16px;
+		//left:-100px;
+ 
+
+	} 
+
+	@media screen and (min-width: 761px) and (max-width:1023px) {
+		 font-size:16px;
+		 left:-10px;
+	}
+
+	@media screen and (min-width: 1024px) and (max-width:1279px) {
+		 font-size:16px;
+		 left:-100px;
+	}
+
+} 
 #office-form-search{
 	width:100%;
 	margin-left:150px;
 	position:relative;
 	top:5px;
+	border:none;
+	border-radius:0px;
+
+	@media screen and (min-width: 761px) and (max-width:1023px) {
+		 width:90%;
+		 margin-left:130px;
+	}
 }
 
 .office-dropdown{
 	@extend .dropdown;
-	//margin-left:-50px;
+	//margin-left:100px;
 }
 .office-dropdown-menu{
-	@extend .dropdown-menu;	 
+	@extend .dropdown-menu;
+	 
 }
 .office-badge{
 	@extend .badge;
-	background-color: #ed0303;
+	background-color:#e00322;
+	border-radius:2px;
+	text-shadow:0px 1px 1px rgba(0, 0, 0, 0.6);
 }
 .badge-position{
 	position:relative;
@@ -62,6 +96,34 @@
 	color: lighten(#232222, 10%);
 	text-shadow:0px 1px 1px rgba(0, 0, 0, 0.6);
 }
-.open{
-	 background-color:#fff;
+
+.request-btn-success{
+	@extend .btn-success;
+	@include btn-properties(12px, 3px);
+	
 }
+.request-btn-danger{
+	@extend .btn-danger;
+	@include btn-properties(12px, 3px);
+}
+.request-btn-warning{
+	@extend .btn-warning;
+}
+.btn-margin{
+	margin-left:20px;
+}
+/*
+.office-triangle:after {
+content: '';
+display: block;
+position: relative;
+top: -15px;
+//right:100px;
+width: 20px;
+height: 20px; 
+    background: #FFFFFF;
+    border-right:1px solid #CAD5E0;
+    border-bottom:1px solid #CAD5E0;
+ -moz-transform:rotate(225deg);
+  -webkit-transform:rotate(225deg);
+}*/

@@ -1,0 +1,11 @@
+.office-content{
+	margin-top:0px;
+
+
+}
+
+.office-border{
+	@include border_properties_all(right, 1px, solid, #000000);
+	min-height:800px;
+	
+}
