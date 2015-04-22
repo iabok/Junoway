@@ -9,10 +9,14 @@ var router = express.Router();
 router.post('/practitioner', function(req, res) {
 	var formObject = req.body;
 	Practitioner.signup(formObject,function(err,practitioner){
-		if(err)
-			res.redirect('/#practitioners');
-		else
-			res.redirect('/alerts/success-create.html');
+		if(err){
+			console.log('Sorry Error this ' + err +'  occurred while saving your data.!!');
+			res.send({'error':'An error has occurred'});
+		}
+		else{
+			console.log('Success: ' + JSON.stringify(practitioner));
+            res.send(JSON.stringify(practitioner));
+        }
 	});
 });
 
@@ -22,11 +26,11 @@ router.post('/facilitator', function(req, res) {
 	//console.log('Adding facilitator Details: ' + JSON.stringify(formObject));
 	Facilitator.signup(formObject,function(err,facilitator){
 		if(err){
-			//console.log('Sorry Error this ' + err +'  occurred while saving your data.!!');
+			console.log('Sorry Error this ' + err +'  occurred while saving your data.!!');
 			res.send({'error':'An error has occurred'});
 		}
 		else{
-			//console.log('Success: ' + JSON.stringify(facilitator));
+			console.log('Success: ' + JSON.stringify(facilitator));
             res.send(JSON.stringify(facilitator));
         }
 	});

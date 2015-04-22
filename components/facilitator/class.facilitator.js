@@ -43,24 +43,16 @@ function Facilitator(){
 			contact : {
 				website 	: formObject['website'],
 				mobileNumber 	: {
-					code : formObject['mobiCode1'],
-					providerCode : formObject['mobiCode2'],
-					number : formObject['mobiCode3']
+					code : formObject['mobiCode1']
 				},
 				telephone1 	: {
-					code : formObject['teleCode1'],
-					providerCode : formObject['teleCode2'],
-					number : formObject['teleCode3']
+					code : formObject['teleCode1']
 				},
 				telephone2 	: {
-					code : formObject['tele1Code1'],
-					providerCode : formObject['tele1Code2'],
-					number : formObject['tele1Code3']
+					code : formObject['tele1Code1']
 				},
 				faxNumber 	: {
-					code : formObject['faxCode1'],
-					providerCode : formObject['faxCode2'],
-					number : formObject['faxCode3']
+					code : formObject['faxCode1']
 				}
 			},
 			owner : {

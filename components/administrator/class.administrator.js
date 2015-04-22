@@ -30,19 +30,13 @@ function Admministrator(){
 					contact : {
 						email 	: formObject['admin_email'],
 						mobileNumber 	: {
-							code : formObject['admin_mobiCode1'],
-							providerCode : formObject['admin_mobiCode2'],
-							number : formObject['admin_mobiCode3']
+							code : formObject['admin_mobiCode1']
 						},
 						landLine 	: {
-							code : formObject['admin_homeCode1'],
-							providerCode : formObject['admin_homeCode2'],
-							number : formObject['admin_homeCode3']
+							code : formObject['admin_homeCode1']
 						},
 						faxNumber 	: {
-							code : formObject['admin_faxCode1'],
-							providerCode : formObject['admin_faxCode2'],
-							number : formObject['admin_faxCode3']
+							code : formObject['admin_faxCode1']
 						},
 						onlineProfile	: formObject['admin_website']
 					},

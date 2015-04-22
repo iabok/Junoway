@@ -3,12 +3,12 @@
 @import "compass/typography/lists/horizontal-list";
 
 #footer{
-	& #footer-background{
+	& .footer-background{
 		background-color:#000000;
 		//margin-bottom:20px;
 	}
 
-	& #footer-background-1{
+	& .footer-background-1{
 		background:none;
 	}
 }

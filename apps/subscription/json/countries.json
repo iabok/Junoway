@@ -130,7 +130,12 @@
             "abbr": "ZAB",
             "id": 32,
             "name": "Zabol"
-        }]
+        }],
+        "region": "Asia",
+        "subregion": "Southern Asia",
+        "currency": ["AFN"],
+        "callingCode": ["+93"],
+        "capital": "Kabul"
     }, {
         "id": 1002,
         "iso2": "AL",
@@ -279,7 +284,12 @@
             "abbr": "VL",
             "id": 36,
             "name": "Vlorë"
-        }]
+        }],
+        "currency": ["ALL"],
+        "callingCode": ["+355"],
+        "capital": "Tirana",
+        "region": "Europe",
+        "subregion": "Southern Europe"
     }, {
         "id": 1003,
         "iso2": "DZ",
@@ -476,17 +486,33 @@
             "abbr": "13",
             "id": 48,
             "name": "Tlemcen"
-        }]
+        }],
+        "currency": ["DZD"],
+        "callingCode": ["+213"],
+        "capital": "Algiers",
+        "region": "Africa",
+        "subregion": "Northern Africa"
     }, {
         "id": 1004,
         "iso2": "AS",
         "name": "American Samoa",
-        "states": []
+        "states": [],
+        "currency": ["USD"],
+        "callingCode": ["+1684"],
+        "capital": "Pago Pago",
+        "region": "Oceania",
+        "subregion": "Polynesia"
     }, {
         "id": 1005,
         "iso2": "AD",
         "name": "Andorra",
-        "states": []
+        "states": [],
+        "currency": ["EUR"],
+        "callingCode": ["+376"],
+        "capital": "Andorra la Vella",
+        "region": "Europe",
+        "subregion": "Southern Europe",
+        
     }, {
         "id": 1006,
         "iso2": "AO",
@@ -563,12 +589,22 @@
             "abbr": "ZAI",
             "id": 18,
             "name": "Zaire"
-        }]
+        }],
+        "currency": ["AOA"],
+        "callingCode": ["244"],
+        "capital": "Luanda",
+        "region": "Africa",
+        "subregion": "Middle Africa"
     }, {
         "id": 1007,
         "iso2": "AI",
         "name": "Anguilla",
-        "states": []
+        "states": [],
+        "currency": ["XCD"],
+        "callingCode": ["1264"],
+        "capital": "The Valley",
+        "region": "Americas",
+        "subregion": "Caribbean"
     }, {
         "id": 1008,
         "iso2": "AQ",
@@ -577,12 +613,22 @@
             "abbr": "AAT",
             "id": 1,
             "name": "Australian Antarctic Territory"
-        }]
+        }],
+        "currency": [],
+        "callingCode": [],
+        "capital": "",
+        "region": "",
+        "subregion": ""
     }, {
         "id": 1009,
         "iso2": "AG",
         "name": "Antigua and Barbuda",
-        "states": []
+        "states": [],
+        "currency": ["XCD"],
+        "callingCode": ["+1268"],
+        "capital": "Saint John's",
+        "region": "Americas",
+        "subregion": "Caribbean",
     }, {
         "id": 1010,
         "iso2": "AR",
@@ -679,7 +725,12 @@
             "abbr": "T",
             "id": 23,
             "name": "Tucuman"
-        }]
+        }],
+        "currency": ["ARS"],
+        "callingCode": ["+54"],
+        "capital": "Buenos Aires",
+        "region": "Americas",
+        "subregion": "South America"
     }, {
         "id": 1011,
         "iso2": "AM",
@@ -728,12 +779,22 @@
             "abbr": "VD",
             "id": 11,
             "name": "Vayoc Jor"
-        }]
+        }],
+        "currency": ["AMD"],
+        "callingCode": ["+374"],
+        "capital": "Yerevan",
+        "region": "Asia",
+        "subregion": "Western Asia"
     }, {
         "id": 1012,
         "iso2": "AW",
         "name": "Aruba",
-        "states": []
+        "states": [],
+        "currency": ["AWG"],
+        "callingCode": ["+297"],
+        "capital": "Oranjestad",
+        "region": "Americas",
+        "subregion": "Caribbean"
     }, {
         "id": 1013,
         "iso2": "AU",
@@ -770,7 +831,15 @@
             "abbr": "WA",
             "id": 8,
             "name": "Western Australia"
-        }]
+        }],
+        "cca3": "AUS",
+        "currency": ["AUD"],
+        "callingCode": ["+61"],
+        "capital": "Canberra",
+        "altSpellings": ["AU"],
+        "region": "Oceania",
+        "subregion": "Australia and New Zealand"
+
     }, {
         "id": 1014,
         "iso2": "AT",
@@ -811,7 +880,13 @@
             "abbr": "9",
             "id": 9,
             "name": "Wien"
-        }]
+        }],
+        "cca3": "AUT",
+        "currency": ["EUR"],
+        "callingCode": ["43"],
+        "capital": "Vienna",
+        "region": "Europe",
+        "subregion": "Western Europe"
     }, {
         "id": 1015,
         "iso2": "AZ",
@@ -1108,7 +1183,25 @@
             "abbr": "ZAR",
             "id": 73,
             "name": "Zardab"
-        }]
+        }],
+        "cca3": "AZE",
+        "currency": ["AZN"],
+        "callingCode": ["+994"],
+        "capital": "Baku",
+        "region": "Asia",
+        "subregion": "Western Asia"
+    }, {
+        "id": 1809,
+        "iso2": "BS",
+        "name": "Bahamas",
+        "states": [],
+        "cca3": "BHS",
+        "currency": ["BSD"],
+        "callingCode": ["1242"],
+        "capital": "Nassau",
+        "region": "Americas",
+        "subregion": "Caribbean"
+
     }, {
         "id": 1016,
         "iso2": "BH",
@@ -1177,7 +1270,13 @@
             "abbr": "17",
             "id": 16,
             "name": "Ash Shamālīyah"
-        }]
+        }],
+        "cca3": "BHR",
+        "currency": ["BHD"],
+        "callingCode": ["+973"],
+        "capital": "Manama",
+        "region": "Asia",
+        "subregion": "Western Asia"
     }, {
         "id": 1017,
         "iso2": "BD",
@@ -1438,12 +1537,24 @@
             "abbr": "64",
             "id": 64,
             "name": "Thakurgaon zila"
-        }]
+        }],
+        "cca3": "BGD",
+        "currency": ["BDT"],
+        "callingCode": ["+880"],
+        "capital": "Dhaka",
+        "region": "Asia",
+        "subregion": "Southern Asia",
     }, {
         "id": 1018,
         "iso2": "BB",
         "name": "Barbados",
-        "states": []
+        "states": [],
+        "cca3": "BRB",
+        "currency": ["BBD"],
+        "callingCode": ["+1246"],
+        "capital": "Bridgetown",
+        "region": "Americas",
+        "subregion": "Caribbean"
     }, {
         "id": 1019,
         "iso2": "BY",
@@ -1472,7 +1583,13 @@
             "abbr": "VI",
             "id": 6,
             "name": "Vicebskaja voblasc'"
-        }]
+        }],
+        "cca3": "BLR",
+        "currency": ["BYR"],
+        "callingCode": ["+375"],
+        "capital": "Minsk",
+        "region": "Europe",
+        "subregion": "Eastern Europe"
     }, {
         "id": 1020,
         "iso2": "BE",
@@ -1521,7 +1638,13 @@
             "abbr": "BRU",
             "id": 11,
             "name": "Brussels"
-        }]
+        }],
+        "cca3": "BEL",
+        "currency": ["EUR"],
+        "callingCode": ["+32"],
+        "capital": "Brussels",
+        "region": "Europe",
+        "subregion": "Western Europe"
     }, {
         "id": 1021,
         "iso2": "BZ",
@@ -1550,7 +1673,13 @@
             "abbr": "TOL",
             "id": 6,
             "name": "Toledo"
-        }]
+        }],
+        "cca3": "BLZ",
+        "currency": ["BZD"],
+        "callingCode": ["+501"],
+        "capital": "Belmopan",
+        "region": "Americas",
+        "subregion": "Central America",
     }, {
         "id": 1022,
         "iso2": "BJ",
@@ -1603,12 +1732,25 @@
             "abbr": "ZO",
             "id": 12,
             "name": "Zou"
-        }]
+        }],
+        "cca3": "BEN",
+        "currency": ["XOF"],
+        "callingCode": ["+229"],
+        "capital": "Porto-Novo",
+        "region": "Africa",
+        "subregion": "Western Africa"
     }, {
         "id": 1023,
         "iso2": "BM",
         "name": "Bermuda",
-        "states": []
+        "states": [],
+        "cca3": "BMU",
+        "currency": ["BMD"],
+        "callingCode": ["+1441"],
+        "capital": "Hamilton",
+        "region": "Americas",
+        "subregion": "Northern America"
+
     }, {
         "id": 1024,
         "iso2": "BT",
@@ -1693,7 +1835,13 @@
             "abbr": "34",
             "id": 20,
             "name": "Zhemgang"
-        }]
+        }],
+        "cca3": "BTN",
+        "currency": ["BTN", "INR"],
+        "callingCode": ["975"],
+        "capital": "Thimphu",
+        "region": "Asia",
+        "subregion": "Southern Asia"
     }, {
         "id": 1025,
         "iso2": "BO",
@@ -1730,7 +1878,24 @@
             "abbr": "T",
             "id": 8,
             "name": "Tarija"
-        }]
+        }],
+        "cca3": "BOL",
+        "currency": ["BOB", "BOV"],
+        "callingCode": ["+591"],
+        "capital": "Sucre",
+        "region": "Americas",
+        "subregion": "South America"
+    }, {
+        "id": 1801,
+        "iso2": "BQ",
+        "name": "Bonaire",
+        "states": [],
+        "cca3": "BES",
+        "currency": ["USD"],
+        "callingCode": ["+5997"],
+        "capital": "Kralendijk",  
+        "region": "Americas",
+        "subregion": "Caribbean"
     }, {
         "id": 1026,
         "iso2": "BA",
@@ -1743,7 +1908,13 @@
             "abbr": "SRP",
             "id": 2,
             "name": "Republika Srpska"
-        }]
+        }],
+        "cca3": "BIH",
+        "currency": ["BAM"],
+        "callingCode": ["387"],
+        "capital": "Sarajevo",
+        "region": "Europe",
+        "subregion": "Southern Europe"
     }, {
         "id": 1027,
         "iso2": "BW",
@@ -1788,12 +1959,24 @@
             "abbr": "SO",
             "id": 10,
             "name": "Southern"
-        }]
+        }],
+        "cca3": "BWA",
+        "currency": ["BWP"],
+        "callingCode": ["+267"],
+        "region": "Africa",
+        "capital": "Gaborone",
+        "subregion": "Southern Africa"
     }, {
         "id": 1028,
         "iso2": "BV",
         "name": "Bouvet Island",
-        "states": []
+        "states": [],
+        "cca3": "BVT",
+        "currency": ["NOK"],
+        "callingCode": [],
+        "capital": "",
+        "region": "",
+        "subregion": ""
     }, {
         "id": 1029,
         "iso2": "BR",
@@ -1910,17 +2093,35 @@
             "abbr": "TO",
             "id": 28,
             "name": "Tocatins"
-        }]
+        }],
+        "cca3": "BRA",
+        "currency": ["BRL"],
+        "callingCode": ["+55"],
+        "capital": "Bras\u00edlia",
+        "region": "Americas",
+        "subregion": "South America"
     }, {
         "id": 1030,
         "iso2": "IO",
         "name": "British Indian Ocean Territory",
-        "states": []
+        "states": [],
+        "cca3": "IOT",
+        "currency": ["USD"],
+        "callingCode": ["+246"],
+        "capital": "Diego Garcia",
+        "region": "Africa",
+        "subregion": "Eastern Africa"
     }, {
         "id": 1031,
         "iso2": "VG",
         "name": "Virgin Islands, British",
-        "states": []
+        "states": [],
+        "cca3": "VGB",
+        "currency": ["USD"],
+        "callingCode": ["+1284"],
+        "capital": "Road Town",
+        "region": "Americas",
+        "subregion": "Caribbean"
     }, {
         "id": 1032,
         "iso2": "BN",
@@ -1941,7 +2142,13 @@
             "abbr": "TU",
             "id": 4,
             "name": "Tutong"
-        }]
+        }],
+        "cca3": "BRN",
+        "currency": ["BND"],
+        "callingCode": ["+673"],
+        "capital": "Bandar Seri Begawan",
+        "region": "Asia",
+        "subregion": "South-Eastern Asia"
     }, {
         "id": 1033,
         "iso2": "BG",
@@ -2054,7 +2261,13 @@
             "abbr": "06",
             "id": 27,
             "name": "Vraca"
-        }]
+        }],
+        "cca3": "BGR",
+        "currency": ["BGN"],
+        "callingCode": ["+359"],
+        "capital": "Sofia",
+        "region": "Europe",
+        "subregion": "Eastern Europe"
     }, {
         "id": 1034,
         "iso2": "BF",
@@ -2239,7 +2452,13 @@
             "abbr": "ZOU",
             "id": 45,
             "name": "Zoundweogo"
-        }]
+        }],
+        "cca3": "BFA",
+        "currency": ["XOF"],
+        "callingCode": ["+226"],
+        "capital": "Ouagadougou",
+        "region": "Africa",
+        "subregion": "Western Africa"
     }, {
         "id": 1035,
         "iso2": "MM",
@@ -2300,7 +2519,8 @@
             "abbr": "17",
             "id": 14,
             "name": "Shan"
-        }]
+        }],
+
     }, {
         "id": 1036,
         "iso2": "BI",
@@ -2361,7 +2581,13 @@
             "abbr": "RY",
             "id": 14,
             "name": "Ruyigi"
-        }]
+        }],
+        "cca3": "BDI",
+        "currency": ["BIF"],
+        "callingCode": ["+257"],
+        "capital": "Bujumbura",
+        "region": "Africa",
+        "subregion": "Eastern Africa",
     }, {
         "id": 1037,
         "iso2": "KH",
@@ -2462,7 +2688,14 @@
             "abbr": "21",
             "id": 24,
             "name": "Taakaev"
-        }]
+        }],
+        "cca3": "KHM",
+        "currency": ["KHR"],
+        "callingCode": ["855"],
+        "capital": "Phnom Penh",
+        "region": "Asia",
+        "subregion": "South-Eastern Asia"
+
     }, {
         "id": 1038,
         "iso2": "CM",
@@ -2499,7 +2732,14 @@
             "abbr": "OU",
             "id": 8,
             "name": "West"
-        }]
+        }],
+        "cca3": "CMR",
+        "currency": ["XAF"],
+        "callingCode": ["+237"],
+        "capital": "Yaound\u00e9",
+        "region": "Africa",
+        "subregion": "Middle Africa"
+
     }, {
         "id": 1039,
         "iso2": "CA",
@@ -2556,7 +2796,13 @@
             "abbr": "YT",
             "id": 13,
             "name": "Yukon Territory"
-        }]
+        }],
+        "cca3": "CAN",
+        "currency": ["CAD"],
+        "callingCode": ["+1"],
+        "capital": "Ottawa",
+        "region": "Americas",
+        "subregion": "Northern America"
     }, {
         "id": 1040,
         "iso2": "CV",
@@ -2625,12 +2871,24 @@
             "abbr": "TA",
             "id": 16,
             "name": "Tarrafal"
-        }]
+        }],
+        "cca3": "CPV",
+        "currency": ["CVE"],
+        "callingCode": ["+238"],
+        "capital": "Praia",
+        "region": "Africa",
+        "subregion": "Western Africa"
     }, {
         "id": 1041,
         "iso2": "KY",
         "name": "Cayman Islands",
-        "states": []
+        "states": [],
+        "cca3": "CYM",
+        "currency": ["KYD"],
+        "callingCode": ["+1345"],
+        "capital": "George Town",
+        "region": "Americas",
+        "subregion": "Caribbean"
     }, {
         "id": 1042,
         "iso2": "CF",
@@ -2703,7 +2961,13 @@
             "abbr": "VR",
             "id": 17,
             "name": "Vakaga"
-        }]
+        }],
+        "cca3": "CAF",
+        "currency": ["XAF"],
+        "callingCode": ["+236"],
+        "capital": "Bangui",
+        "region": "Africa",
+        "subregion": "Middle Africa"
     }, {
         "id": 1043,
         "iso2": "TD",
@@ -2764,7 +3028,13 @@
             "abbr": "TA",
             "id": 14,
             "name": "Tandjile"
-        }]
+        }],
+        "cca3": "TCD",
+        "currency": ["XAF"],
+        "callingCode": ["+235"],
+        "capital": "N'Djamena",
+        "region": "Africa",
+        "subregion": "Middle Africa"
     }, {
         "id": 1044,
         "iso2": "CL",
@@ -2821,7 +3091,13 @@
             "abbr": "VS",
             "id": 13,
             "name": "Valparaiso"
-        }]
+        }],
+        "cca3": "CHL",
+        "currency": ["CLF", "CLP"],
+        "callingCode": ["+56"],
+        "capital": "Santiago",
+        "region": "Americas",
+        "subregion": "South America"
     }, {
         "id": 1045,
         "iso2": "CN",
@@ -2958,17 +3234,35 @@
             "abbr": "92",
             "id": 33,
             "name": "Macau"
-        }]
+        }],
+        "cca3": "CHN",
+        "currency": ["CNY"],
+        "callingCode": ["+86"],
+        "capital": "Beijing",
+        "region": "Asia",
+        "subregion": "Eastern Asia"
     }, {
         "id": 1046,
         "iso2": "CX",
         "name": "Christmas Island",
-        "states": []
+        "states": [],
+        "cca3": "CXR",
+        "currency": ["AUD"],
+        "callingCode": ["+61"],
+        "capital": "Flying Fish Cove",
+        "region": "Oceania",
+        "subregion": "Australia and New Zealand"
     }, {
         "id": 1047,
         "iso2": "CC",
         "name": "Cocos (Keeling) Islands",
-        "states": []
+        "states": [],
+        "cca3": "CCK",
+        "currency": ["AUD"],
+        "callingCode": ["+61"],
+        "capital": "West Island",
+        "region": "Oceania",
+        "subregion": "Australia and New Zealand"
     }, {
         "id": 1048,
         "iso2": "CO",
@@ -3101,7 +3395,13 @@
             "abbr": "VID",
             "id": 32,
             "name": "Vichada"
-        }]
+        }],
+        "cca3": "COL",
+        "currency": ["COP"],
+        "callingCode": ["+57"],
+        "capital": "Bogot\u00e1",
+        "region": "Americas",
+        "subregion": "South America"
     }, {
         "id": 1049,
         "iso2": "KM",
@@ -3118,11 +3418,17 @@
             "abbr": "M",
             "id": 3,
             "name": "Moheli Moili"
-        }]
+        }],
+        "cca3": "COM",
+        "currency": ["KMF"],
+        "callingCode": ["+269"],
+        "capital": "Moroni",
+        "region": "Africa",
+        "subregion": "Eastern Africa"
     }, {
         "id": 1050,
         "iso2": "CD",
-        "name": "Congo, The Democratic Republic of the",
+        "name": " Democratic Republic of the Congo",
         "states": [{
             "abbr": "KN",
             "id": 1,
@@ -3171,11 +3477,17 @@
             "abbr": "SK",
             "id": 12,
             "name": "Sud-Kivu"
-        }]
+        }],
+        "cca3": "COD",
+        "currency": ["CDF"],
+        "callingCode": ["+243"],
+        "capital": "Kinshasa",
+        "region": "Africa",
+        "subregion": "Middle Africa"
     }, {
         "id": 1051,
         "iso2": "CG",
-        "name": "Congo",
+        "name": "Republic of the Congo",
         "states": [{
             "abbr": "BZV",
             "id": 1,
@@ -3220,12 +3532,22 @@
             "abbr": "13",
             "id": 11,
             "name": "Sangha"
-        }]
+        }],
+        "cca3": "COG",
+        "currency": ["XAF"],
+        "callingCode": ["+242"],
+        "capital": "Brazzaville",
+        "region": "Africa",
+        "subregion": "Middle Africa"
     }, {
         "id": 1052,
         "iso2": "CK",
         "name": "Cook Islands",
-        "states": []
+        "states": [],
+        "cca3": "COK",
+        "currency": ["NZD"],
+        "callingCode": ["+682"],
+        "capital": "Avarua"
     }, {
         "id": 1053,
         "iso2": "CR",
@@ -3258,7 +3580,13 @@
             "abbr": "SJ",
             "id": 7,
             "name": "San Jose"
-        }]
+        }],
+        "cca3": "CRI",
+        "currency": ["CRC"],
+        "callingCode": ["+506"],
+        "capital": "San Jos\u00e9",
+        "region": "Americas",
+        "subregion": "Central America"
     }, {
         "id": 1054,
         "iso2": "CI",
@@ -3412,7 +3740,13 @@
             "abbr": "01",
             "id": 20,
             "name": "Zagrebacka zupanija"
-        }]
+        }],
+        "cca3": "HRV",
+        "currency": ["HRK"],
+        "callingCode": ["+385"],
+        "capital": "Zagreb",
+        "region": "Europe",
+        "subregion": "Southern Europe"
     }, {
         "id": 1056,
         "iso2": "CU",
@@ -3501,7 +3835,25 @@
             "abbr": "IJ",
             "id": 21,
             "name": "Municipio Especial Isla de la Juventud"
-        }]
+        }],
+        "cca3": "CUB",
+        "currency": ["CUC", "CUP"],
+        "callingCode": ["53"],
+        "capital": "Havana",
+        "region": "Americas",
+        "subregion": "Caribbean"
+    }, {
+        "id": 1810,
+        "iso2": "CW",
+        "name": "Cura",
+        "states": [],
+        "cca3": "CUW",
+        "currency": ["ANG"],
+        "callingCode": ["+5999"],
+        "capital": "Willemstad",
+        "region": "Americas",
+        "subregion": "Caribbean"
+
     }, {
         "id": 1057,
         "iso2": "CY",
@@ -3530,7 +3882,13 @@
             "abbr": "05",
             "id": 6,
             "name": "Pafos"
-        }]
+        }],
+        "cca3": "CYP",
+        "currency": ["EUR"],
+        "callingCode": ["+357"],
+        "capital": "Nicosia",
+        "region": "Europe",
+        "subregion": "Eastern Europe"
     }, {
         "id": 1058,
         "iso2": "CZ",
@@ -3591,7 +3949,13 @@
             "abbr": "ZL",
             "id": 14,
             "name": "Zlínský kraj"
-        }]
+        }],
+        "cca3": "CZE",
+        "currency": ["CZK"],
+        "callingCode": ["+420"],
+        "capital": "Prague",
+        "region": "Europe",
+        "subregion": "Eastern Europe"
     }, {
         "id": 1059,
         "iso2": "DK",
@@ -3660,7 +4024,13 @@
             "abbr": "080",
             "id": 16,
             "name": "North Jutland"
-        }]
+        }],
+        "cca3": "DNK",
+        "currency": ["DKK"],
+        "callingCode": ["+45"],
+        "capital": "Copenhagen",
+        "region": "Europe",
+        "subregion": "Northern Europe"
     }, {
         "id": 1060,
         "iso2": "DJ",
@@ -3685,12 +4055,24 @@
             "abbr": "TA",
             "id": 5,
             "name": "Tadjoura"
-        }]
+        }],
+        "cca3": "DJI",
+        "currency": ["DJF"],
+        "callingCode": ["+253"],
+        "capital": "Djibouti",
+        "region": "Africa",
+        "subregion": "Eastern Africa"
     }, {
         "id": 1061,
         "iso2": "DM",
         "name": "Dominica",
-        "states": []
+        "states": [],
+        "cca3": "DMA",
+        "currency": ["XCD"],
+        "callingCode": ["+1767"],
+        "capital": "Roseau",
+        "region": "Americas",
+        "subregion": "Caribbean"
     }, {
         "id": 1062,
         "iso2": "DO",
@@ -3811,7 +4193,13 @@
             "abbr": "27",
             "id": 29,
             "name": "Valverde"
-        }]
+        }],
+        "cca3": "DOM",
+        "currency": ["DOP"],
+        "callingCode": ["+1809", "+1829", "+1849"],
+        "capital": "Santo Domingo",
+        "region": "Americas",
+        "subregion": "Caribbean"
     }, {
         "id": 1063,
         "iso2": "TL",
@@ -3961,7 +4349,13 @@
             "abbr": "Z",
             "id": 22,
             "name": "Zamora-Chinchipe"
-        }]
+        }],
+        "cca3": "ECU",
+        "currency": ["USD"],
+        "callingCode": ["+593"],
+        "capital": "Quito",
+        "region": "Americas",
+        "subregion": "South America",
     }, {
         "id": 1065,
         "iso2": "EG",
@@ -4070,7 +4464,14 @@
             "abbr": "SHG",
             "id": 26,
             "name": "Suhaj"
-        }]
+        }],
+        "cca3": "EGY",
+        "currency": ["EGP"],
+        "callingCode": ["+20"],
+        "capital": "Cairo",
+        "region": "Africa",
+        "subregion": "Northern Africa"
+
     }, {
         "id": 1066,
         "iso2": "SV",
@@ -4119,7 +4520,13 @@
             "abbr": "US",
             "id": 11,
             "name": "Usulutan"
-        }]
+        }],
+        "cca3": "SLV",
+        "currency": ["SVC", "USD"],
+        "callingCode": ["+503"],
+        "capital": "San Salvador",
+        "region": "Americas",
+        "subregion": "Central America"
     }, {
         "id": 1067,
         "iso2": "GQ",
@@ -4160,7 +4567,13 @@
             "abbr": "WN",
             "id": 9,
             "name": "Wele-Nzas"
-        }]
+        }],
+        "cca3": "GNQ",
+        "currency": ["XAF"],
+        "callingCode": ["240"],
+        "capital": "Malabo",
+        "region": "Africa",
+        "subregion": "Middle Africa"
     }, {
         "id": 1068,
         "iso2": "ER",
@@ -4189,7 +4602,13 @@
             "abbr": "SK",
             "id": 6,
             "name": "Semenawi Keyih Bahri [Semien-Keih-Bahri]"
-        }]
+        }],
+        "cca3": "ERI",
+        "currency": ["ERN"],
+        "callingCode": ["+291"],
+        "capital": "Asmara",
+        "region": "Africa",
+        "subregion": "Eastern Africa"
     }, {
         "id": 1069,
         "iso2": "EE",
@@ -4254,7 +4673,13 @@
             "abbr": "86",
             "id": 15,
             "name": "Vorumaa"
-        }]
+        }],
+        "cca3": "EST",
+        "currency": ["EUR"],
+        "callingCode": ["+372"],
+        "capital": "Tallinn",
+        "region": "Europe",
+        "subregion": "Northern Europe"
     }, {
         "id": 1070,
         "iso2": "ET",
@@ -4303,17 +4728,45 @@
             "abbr": "TI",
             "id": 11,
             "name": "Tigrai"
-        }]
+        }],
+        "cca3": "ETH",
+        "currency": ["ETB"],
+        "callingCode": ["251"],
+        "capital": "Addis Ababa",
+        "region": "Africa",
+        "subregion": "Eastern Africa"
     }, {
         "id": 1072,
         "iso2": "FK",
         "name": "Falkland Islands (Malvinas)",
-        "states": []
+        "states": [{
+            "abbr": "S",
+            "id": 1,
+            "name": "Stanley"
+        }],
+        "cca3": "FLK",
+        "currency": ["FKP"],
+        "callingCode": ["+500"],
+        "capital": "Stanley",
+        "region": "Americas",
+        "subregion": "South America"
+
     }, {
         "id": 1073,
         "iso2": "FO",
         "name": "Faroe Islands",
-        "states": []
+        "states": [{
+            "abbr": "TF",
+            "id": 1,
+            "name": "T\u00f3rshavn"
+        }],
+        "cca3": "FRO",
+        "currency": ["DKK"],
+        "callingCode": ["+298"],
+        "capital": "T\u00f3rshavn",
+        "relevance": "0.5",
+        "region": "Europe",
+        "subregion": "Northern Europe"
     }, {
         "id": 1074,
         "iso2": "FJ",
@@ -4334,7 +4787,13 @@
             "abbr": "R",
             "id": 4,
             "name": "Rotuma"
-        }]
+        }],
+        "cca3": "FJI",
+        "currency": ["FJD"],
+        "callingCode": ["+679"],
+        "capital": "Suva",
+        "region": "Oceania",
+        "subregion": "Melanesia"
     }, {
         "id": 1075,
         "iso2": "FI",
@@ -4419,7 +4878,13 @@
             "abbr": "AL",
             "id": 20,
             "name": "Åland"
-        }]
+        }],
+        "cca3": "FIN",
+        "currency": ["EUR"],
+        "callingCode": ["+358"],
+        "capital": "Helsinki",
+        "region": "Europe",
+        "subregion": "Northern Europe"
     }, {
         "id": 1076,
         "iso2": "FR",
@@ -4804,12 +5269,22 @@
             "abbr": "39",
             "id": 95,
             "name": "Jura"
-        }]
+        }],
+        "cca3": "FRA",
+        "currency": ["EUR"],
+        "callingCode": ["+33"],
+        "capital": "Paris",
+        "region": "Europe",
+        "subregion": "Western Europe"
     }, {
         "id": 1077,
         "iso2": "GF",
         "name": "French Guiana",
-        "states": []
+        "states": [],
+        "cca3": "GUF",
+        "currency": ["EUR"],
+        "callingCode": ["594"],
+        "capital": "Cayenne"
     }, {
         "id": 1078,
         "iso2": "PF",

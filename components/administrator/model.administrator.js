@@ -11,30 +11,24 @@ var administrator = new Schema({
 	experience		: Number,
 	address	: {
 		country		: { type : String, required : true},
-		city		: { type : String, required : true},
+		city		: String,
 		zipCode		: Number,
 		areaCode	: Number,
 		postalCode	: Number,
-		state_district	: String,
+		state_district	: { type : String, required : true},
 		streetLine1		: String,
 		streetLine2		: String
 	},
 	contact : {
 		email 			: { type : String, required : true},
 		mobileNumber	: {
-			code : String,
-			providerCode : Number,
-			number : Number
+			code : String
 		},
 		landLine		: {
-			code : String,
-			providerCode : Number,
-			number : Number
+			code : String 
 		},
 		faxNumber		: {
-			code : String,
-			providerCode : Number,
-			number : Number
+			code : String 
 		},
 		onlineProfile	: String
 	},

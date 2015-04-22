@@ -6,6 +6,8 @@ $button_color_hover:#e0456a;
 $secondary_color: #eee;
 $page_width: 300px;
 $font_size:16px;
+$font_family_original:"Source Sans Pro";
+$font_family_second:"Open sans";
  
 
 //fonts
@@ -35,9 +37,44 @@ monospace;
 body {
 	// Set the background color
 	background: $background_color;
-	@include font_properties (300, 10px, "Open Sans");
+	@include font_properties (300, 10px, $font_family_original);
 	//overflow-x: hidden;
+	font-size: 15pt;
+	font-weight: 300;
+	line-height: 1.85em;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
 	@media screen and (max-width: 360px){
  		overflow-x: hidden;
 	} 	
+}
+
+h1,h2,h3,h4,h5{
+	line-height:auto;
+	margin-left:20px;
+	color:#333;
+}
+
+h1,h2,h3{
+	font-weight:400
+}
+
+h4,h5{
+	font-weight:600
+}
+
+h1{
+	font-size:38px
+}
+
+h2{
+	font-size:28px
+}
+
+h3{
+	font-size:24px
+}
+
+h4{
+	font-size:18px
 }

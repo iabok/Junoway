@@ -5,10 +5,21 @@
 	$font-variant: small-caps;
  }
 
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
 //Default Border mixin
  @mixin border_properties($pixels, $property, $color){
  	border: $pixels $property $color;
  }
+
+ @mixin timeline-position($position, $top-pixels, $left-pixels){
+	position:$position;
+	top:$top-pixels;
+	left:$left-pixels;
+}
 
 //Types:
 //******************
@@ -99,4 +110,67 @@
 	@else {
 		margin:$pixels;
 	}
+}
+
+@mixin transition-ease($time){
+	-moz-transition: background-color $time ease-in-out, color $time ease-in-out, border-bottom-color $time ease-in-out;
+		-webkit-transition: background-color $time ease-in-out, color $time ease-in-out, border-bottom-color $time ease-in-out;
+			-o-transition: background-color $time ease-in-out, color $time ease-in-out, border-bottom-color $time ease-in-out;
+				-ms-transition: background-color $time ease-in-out, color $time ease-in-out, border-bottom-color $time ease-in-out;
+					transition: background-color $time ease-in-out, color $time ease-in-out, border-bottom-color $time ease-in-out;
+}
+
+//Animations
+@-webkit-keyframes timeline-fontbulger {
+        from {
+		    transform: rotate(0deg);
+		  }
+		  to {
+		    transform: rotate(360deg);
+		}
+}
+
+@mixin links ($link, $visit, $hover, $active) {
+  a {
+    color: $link;
+    &:visited {
+      color: $visit;
+    }
+    &:hover {
+      color: $hover;   
+    }
+    &:active {
+      color: $active;
+    }
+  }
+}
+
+/// Mixin to customize scrollbars
+/// Beware, this does not work in all browsers
+/// @author Hugo Giraudel
+/// @param {Length} $size - Horizontal scrollbar's height and vertical scrollbar's width
+/// @param {Color} $foreground-color - Scrollbar's color
+/// @param {Color} $background-color [mix($foreground-color, white, 50%)] - Scrollbar's color
+/// @example scss - Scrollbar styling
+///   @include scrollbars(.5em, slategray);
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white,  50%)) {
+  // For Google Chrome
+  ::-webkit-scrollbar {
+      width:  $size;
+      height: $size;
+  }
+
+  ::-webkit-scrollbar-thumb {
+      background: $foreground-color;
+  }
+
+  ::-webkit-scrollbar-track {
+      background: $background-color;
+  }
+
+  // For Internet Explorer
+  body {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+  }
 }

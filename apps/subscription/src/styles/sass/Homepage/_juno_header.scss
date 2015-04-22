@@ -26,6 +26,7 @@
 
 ul.juno-tabs {
 	@include horizontal-list(10px); 
+	@include transition-ease(0.35s);
 }
 
 #myCarousel{

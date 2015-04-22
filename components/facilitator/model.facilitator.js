@@ -25,8 +25,8 @@ var facilitator = new Schema({
 	},
 	address	: {
 		country 	: { type : String, required : true},
-		city		: { type : String, required : true},
-		state_district	: String,
+		city		: String,
+		state_district	: { type : String, required : true},
 		streetLine1	: String,
 		streetLine2	: String,
 		zipCode		: Number,
@@ -36,24 +36,16 @@ var facilitator = new Schema({
 	contact	: {
 		website		: String,
 		mobileNumber	: {
-			code : String,
-			providerCode : Number,
-			number : Number
+			code : String 
 		},
 		telephone1	: {
-			code : String,
-			providerCode : Number,
-			number : Number
+			code : String 
 		},
 		telephone2	: {
-			code : String,
-			providerCode : Number,
-			number : Number
+			code : String
 		},
 		faxNumber	: {
-			code : String,
-			providerCode : Number,
-			number : Number
+			code : String
 		}
 	},
 	owner : {

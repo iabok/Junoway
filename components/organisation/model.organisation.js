@@ -24,20 +24,16 @@ var organisation = new Schema({
 	contact		: {
 		website 	: String,
 		mobileNumber	: {
-			code : String,
-			provideCode : Number,
-			number : Number
+			code : String
+			 
 		},
 		landLine	: {
-			code 	: String,
-			provideCode 	: Number,
-			number 	: Number
+			code 	: String
+			 
 		},
 		employerEmail	: String,
 		faxNumber 	: {
-			code 	: String,
-			provideCode 	: Number,
-			number 	: Number
+			code 	: String
 		}
 	},
 	touristAttraction	:  String

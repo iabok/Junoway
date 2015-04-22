@@ -38,10 +38,14 @@
 }
 
 .juno-header-note{
-
+		h1{
+		//margin-top:40px;
+		font-family:$font_family_second;
+		}
 	@media screen and (max-width: 360px){
 		h1{
 		//margin-top:40px;
+		font-family:$font_family_second;
 		font-size:30px;
 		}
 

@@ -30,7 +30,7 @@ var practitioner = new Schema({
 	},
 	address 	: {
 		country		: { type : String, required : true},
-		city		: { type : String, required : true},
+		city		: String,
 		zipCode		: Number,
 		state_district	: String,
 		streetLine1	: String,
@@ -42,18 +42,12 @@ var practitioner = new Schema({
 		altenateEmail	: String,
 		mobileNumber	: {
 			code : String,
-			provideCode : Number,
-			number : Number
 		},
 		landLine	: {
 			code : String,
-			provideCode : Number,
-			number : Number
 		},
 		faxNumber	: {
 			code : String,
-			provideCode : Number,
-			number : Number
 		},
 		upin		: Number,
 		npi		: Number

@@ -29,20 +29,14 @@ function Organisation(){
 					contact		: {
 						website 	: formObject['organ_website'],
 						mobileNumber	: {
-							code : formObject['organ_mobiCode1'],
-							providerCode : formObject['organ_mobiCode2'],
-							number : formObject['organ_mobiCode3']
+							code : formObject['organ_mobiCode1']
 						},
 						landLine	: {
-							code : formObject['organ_homeCode1'],
-							providerCode : formObject['organ_homeCode2'],
-							number : formObject['organ_homeCode3']
+							code : formObject['organ_homeCode1']
 						},
 						employerEmail	: formObject['organ_email'],
 						faxNumber 	: {
-							code : formObject['organ_faxCode1'],
-							providerCode : formObject['organ_faxCode2'],
-							number : formObject['organ_faxCode3']
+							code : formObject['organ_faxCode1']
 						}
 					},
 					touristAttraction	:  formObject['tourist']

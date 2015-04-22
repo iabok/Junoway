@@ -51,19 +51,13 @@ function Practitioner(){
 			contact 	: {
 				altenateEmail	: formObject['email2'],
 				mobileNumber	: {
-					code : formObject['mobiCode1'],
-					providerCode : formObject['mobiCode2'],
-					number : formObject['mobiCode3']
+					code : formObject['mobiCode1']
 				},
 				landLine	: {
-					code : formObject['homeCode1'],
-					providerCode : formObject['homeCode2'],
-					number : formObject['homeCode3']
+					code : formObject['homeCode1']
 				},
 				faxNumber	: {
-					code : formObject['faxCode1'],
-					providerCode : formObject['faxCode2'],
-					number : formObject['faxCode3']
+					code : formObject['faxCode1']
 				},
 				upin		: formObject['upin'],
 				npi		: formObject['npi']

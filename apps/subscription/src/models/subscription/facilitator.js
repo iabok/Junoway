@@ -39,17 +39,7 @@ define(['underscore', 'backbone', 'backbone-validation'], function (_, Backbone,
 
         idAttribute: '_id',
         defaults: {
-            idAttribute: null,
-            admin_sex: 'Male',
-            admin_nationality: 'Ugandan',
-            admin_experience: 'Below 5 years',
-            admin_Country: 'Uganda',
-            admin_state: 'Kampala',
-            admin_City: 'Kampala',
-            ageOfCompany: '1',
-            Country: 'Uganda',
-            state: 'Kampala',
-            city:'Kampala'
+            idAttribute: null
         },
         validation: {
             companyName: {
@@ -59,8 +49,7 @@ define(['underscore', 'backbone', 'backbone-validation'], function (_, Backbone,
             },
             companyTin: {
                 required: true,
-                minLength: 3,
-                range: [9, 100]
+                minLength: 3
             },
             regNo: {
                 required: true,
@@ -79,7 +68,7 @@ define(['underscore', 'backbone', 'backbone-validation'], function (_, Backbone,
                 minLength: 3
             },
             middleName: {
-                required: true,
+                required: false,
                 minLength: 3
             },
             email: {
@@ -105,7 +94,7 @@ define(['underscore', 'backbone', 'backbone-validation'], function (_, Backbone,
                 minLength: 3
             },
             admin_middleName: {
-                required: true,
+                required: false,
                 minLength: 3
             },
             admin_age: {
@@ -116,29 +105,30 @@ define(['underscore', 'backbone', 'backbone-validation'], function (_, Backbone,
                 oneOf: ['Male', 'Female']
             },
             admin_nationality: {
-              oneOf: ['Ugandan', 'Kenyan', 'Tanzanian', 'Rwandanese', 'Burundian']
+                required:true,
+              //oneOf: ['Ugandan', 'Kenyan', 'Tanzanian', 'Rwandanese', 'Burundian']
             },
             admin_experience: {
               oneOf: ['Below 5 years', '5-10 years', '10-25 years']
             },
             admin_Country: {
                 required:true,
-                oneOf: ['Uganda', 'Kenya', 'Tanzania', 'Rwanda', 'Burundi']
+                //oneOf: ['Uganda', 'Kenya', 'Tanzania', 'Rwanda', 'Burundi']
             },
             admin_zipCode: {
-                required: true,
+                //required: true,
                 minLength: 3
             },
             admin_state: {
                 required: true,
-                oneOf: ['Arizona', 'Florida', 'Ohio', 'Los Angele','California']
+                //oneOf: ['Kampala', 'Florida', 'Ohio', 'Los Angele','California']
             },
             admin_streetLine1: {
                 required: false
             },
             admin_city: {
                 required: false,
-                oneOf: ['Kampala', 'Nairobi', 'Arusha', 'Kigali', 'Juba']
+                //oneOf: ['Kampala', 'Nairobi', 'Arusha', 'Kigali', 'Juba']
             },
             admin_streetLine2: {
                 required: false
@@ -150,48 +140,32 @@ define(['underscore', 'backbone', 'backbone-validation'], function (_, Backbone,
                 required: false
             },
             admin_email: {
-                required: false,
+                required: true,
                 pattern: 'email'
             },
             admin_mobiCode1: {
                 required: true,
-                minLength: 3
-            },
-            admin_mobiCode2: {
-                required: true,
-                minLength: 3
-            },
-            admin_mobiCode3: {
-                required: true,
-                minLength: 6
+                minLength: 9
             },
             admin_homeCode1: {
                 required: false,
-                minLength: 3
-            },
-            admin_homeCode2: {
-                required: false,
-                minLength: 3
-            },
-            admin_homeCode3: {
-                required: false,
-                minLength: 6,
+                minLength: 9
             },
             admin_faxCode1: {
                 required: true,
-                minLength: 3
-            },
-            admin_faxCode2: {
-                required: true,
-                minLength: 3
-            },
-            admin_faxCode3: {
-                required: true,
-                minLength: 6
+                minLength: 9
             },
             admin_website: {
                 required: false,
                 minLength: 3
+            },
+            companyTin2: {
+                equalTo: 'companyTin',
+                msg: 'The Company Tin does not match'
+            },
+            regNo2: {
+                equalTo: 'regNo',
+                msg: 'The Registration Number does not match'
             },
             issuing: {
                 required: true,
@@ -207,19 +181,19 @@ define(['underscore', 'backbone', 'backbone-validation'], function (_, Backbone,
             },
             ageOfCompany: {
                 required: true,
-                oneOf: ['1', '2', '3','4','5']
+                //oneOf: ['1', '2', '3','4','5']
             },
             Country: {
                 required:true,
-                oneOf: ['Uganda', 'Kenya', 'Tanzania', 'Rwanda', 'Burundi']
+                //oneOf: ['Uganda', 'Kenya', 'Tanzania', 'Rwanda', 'Burundi']
             },
             zipCode: {
-                required: true,
+                //required: true,
                 minLength: 3
             },
             state: {
                 required: true,
-                oneOf: ['Arizona', 'Florida', 'Ohio', 'Los Angele','California']
+                //oneOf: ['Arizona', 'Florida', 'Ohio', 'Los Angele','California']
             },
             streetLine1: {
                 required: false,
@@ -227,7 +201,7 @@ define(['underscore', 'backbone', 'backbone-validation'], function (_, Backbone,
             },
             city: {
                 required: false,
-                oneOf: ['Kampala', 'Nairobi', 'Arusha', 'Kigali', 'Juba']
+                //oneOf: ['Kampala', 'Nairobi', 'Arusha', 'Kigali', 'Juba']
             },
             streetLine2: {
                 required: false,
@@ -247,51 +221,19 @@ define(['underscore', 'backbone', 'backbone-validation'], function (_, Backbone,
             },
             mobiCode1: {
                 required: true,
-                minLength: 3
-            },
-            mobiCode2: {
-                required: true,
-                minLength: 3
-            },
-            mobiCode3: {
-                required: true,
-                minLength: 6
+                minLength: 9
             },
             teleCode1: {
                 required: true,
-                minLength: 3
-            },
-            teleCode2: {
-                required: true,
-                minLength: 3
-            },
-            teleCode3: {
-                required: true,
-                minLength: 6,
+                minLength: 9
             },
             tele1Code1: {
                 required: false,
-                minLength: 3
-            },
-            tele1Code2: {
-                required: false,
-                minLength: 3
-            },
-            tele1Code3: {
-                required: false,
-                minLength: 6
+                minLength: 9
             },
             faxCode1: {
                 required: true,
-                minLength: 3
-            },
-            faxCode2: {
-                required: true,
-                minLength: 3
-            },
-            faxCode3: {
-                required: true,
-                minLength: 6
+                minLength: 9
             },
             tourist: {
                 required: false,

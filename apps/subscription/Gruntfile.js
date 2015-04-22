@@ -86,14 +86,14 @@ module.exports = function(grunt) {
         */
         ejs: {
             all: {
-              src: ['src/templates/subscription/**/*.ejs', '!_partials/**/*', '!_layouts/**/*'],
+              src: ['src/templates/**/*.ejs', '!src/templates/_partials/**/*', '!src/templates/_layouts/**/*'],
               //cwd: 'src/',
               //dest: 'templates/subscription',
               expand: true,
               ext: '.html',
               options: {
                 title: 'Junoway-scriptions',
-              }
+              },
             }
         },
 
@@ -126,7 +126,9 @@ module.exports = function(grunt) {
                     baseUrl: "src",
                     mainConfigFile: "./require.config.js",
                     include: ['main',
+                    'helpers/utils',
                     'collections/countries',
+                    'collections/subscription/practitioner',
                     'collections/subscription/facilitator',
                     'models/subscription/practitioner',
                     'models/subscription/facilitator',
@@ -137,7 +139,9 @@ module.exports = function(grunt) {
                     
                     ], // Include the main module defined
                     insertRequire: ['main',
+                    'helpers/utils',
                     'collections/countries',
+                    'collections/subscription/practitioner',
                     'collections/subscription/facilitator',
                     'models/subscription/practitioner',
                     'models/subscription/facilitator',
@@ -162,7 +166,7 @@ module.exports = function(grunt) {
          *
          *  Compile, concat & lint css and less files into a single output file
          */
-       /* watch: {
+      /*watch: {
             src: {
                 files: ['**//*/*.scss', '**//*.php'],
                 tasks: ['compass:dev']
@@ -178,7 +182,7 @@ module.exports = function(grunt) {
                     cssDir: 'assets/stylesheets',
                     imagesPath: 'assets/img',
                     noLineComments: false,
-                    outputStyle: 'compressed'
+                    outputStyle: 'expanded'
                 }
             }
         },

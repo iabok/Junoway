@@ -8,18 +8,22 @@
 
 /* ************************** */
 
+@import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600');
+
+
 //Global CSS classes used for all template.
 //@import "menu_sideslide";
-
 
 //compass library
 @import "juno_mixins/juno_mixins";
 
 //compass inbuilt blueprint library
 //@import "blueprint";
-@import "select2/core";
+
 //Bootstrapp sass files
 @import "bootstrap";
+
+@import "select2/core";
 
 //animate sass files
 @import "animate/fading_entrances/fadeIn";
