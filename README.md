@@ -61,7 +61,7 @@ Authors Of The Junoway Project
 * Abok Isaac - @ abokisaac@gmail.com
 * Noah Kange - @ noahkange28@gmail.com
 * Arthur Wandeka - @ wartyw@gmail.com
-* Website: http://wwww.junoway.com
+* Website: http://www.junoway.com
 
 Copyright
 -----------------------------------------------------------
