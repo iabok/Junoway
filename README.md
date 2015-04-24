@@ -64,5 +64,5 @@ Authors Of The Junoway Project
 
 Copyright
 -----------------------------------------------------------
-Copyright (C) 2015 Junoway
+Copyright (C) 2015 www.junoway.com
 
